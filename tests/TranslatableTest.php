@@ -567,12 +567,12 @@ class TranslatableTest extends TestCase
     {
         $value = 'World';
 
-        $this->testModel = TestModel::usingLocale('en')->fill([
+        $this->testModel = TestModel::usingLocale('fr')->fill([
             'name' => $value,
         ]);
         $this->testModel->save();
 
-        $this->assertSame($value, $this->testModel->getTranslation('name', 'en'));
+        $this->assertSame($value, $this->testModel->getTranslation('name', 'fr'));
     }
 
     /** @test */
