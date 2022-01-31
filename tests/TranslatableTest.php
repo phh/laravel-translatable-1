@@ -583,6 +583,8 @@ class TranslatableTest extends TestCase
         $this->testModel = TestModel::usingLocale('en')->create([
             'name' => $value,
         ]);
+        
+        $this->assertTrue(false);
 
         $this->assertSame($value, $this->testModel->getTranslation('name', 'en'));
     }
