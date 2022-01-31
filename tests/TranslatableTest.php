@@ -578,6 +578,7 @@ class TranslatableTest extends TestCase
     /** @test */
     public function it_can_be_translated_and_created_based_on_given_locale()
     {
+        
         $value = 'World';
 
         $this->testModel = TestModel::usingLocale('en')->create([
